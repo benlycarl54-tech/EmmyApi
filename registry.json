@@ -1,0 +1,1306 @@
+[
+  {
+    "file": "1sh-pl",
+    "func": "oneshpl",
+    "endpoint": "/api/1sh-pl",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "Nothing found"
+  },
+  {
+    "file": "accuweather",
+    "func": "accuweather",
+    "endpoint": "/api/accuweather",
+    "params": [
+      {
+        "name": "city",
+        "optional": false
+      }
+    ],
+    "category": "Search & Info",
+    "desc": "accuweather endpoint"
+  },
+  {
+    "file": "ai6-net",
+    "func": "ai6net",
+    "endpoint": "/api/ai6-net",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "ai6net endpoint"
+  },
+  {
+    "file": "aidictation-transcribe",
+    "func": "aidictation",
+    "endpoint": "/api/aidictation-transcribe",
+    "params": [
+      {
+        "name": "audio",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "aidictation endpoint"
+  },
+  {
+    "file": "aio-rapidapi",
+    "func": "aiorapidapi",
+    "endpoint": "/api/aio-rapidapi",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "aiorapidapi endpoint"
+  },
+  {
+    "file": "ali-oss",
+    "func": "alioss",
+    "endpoint": "/api/ali-oss",
+    "params": [
+      {
+        "name": "buffer",
+        "optional": false
+      },
+      {
+        "name": "fn",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "alioss endpoint"
+  },
+  {
+    "file": "anime-quote",
+    "func": "animequote",
+    "endpoint": "/api/anime-quote",
+    "params": [],
+    "category": "Search & Info",
+    "desc": "animequote endpoint"
+  },
+  {
+    "file": "anon-to",
+    "func": "anonto",
+    "endpoint": "/api/anon-to",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "anonto endpoint"
+  },
+  {
+    "file": "aplmate",
+    "func": "aplmate",
+    "endpoint": "/api/aplmate",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "aplmate endpoint"
+  },
+  {
+    "file": "applemusic-search",
+    "func": "applemusic",
+    "endpoint": "/api/applemusic-search",
+    "params": [
+      {
+        "name": "query",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "applemusic endpoint"
+  },
+  {
+    "file": "aws-s3",
+    "func": "aws",
+    "endpoint": "/api/aws-s3",
+    "params": [
+      {
+        "name": "buffer",
+        "optional": false
+      },
+      {
+        "name": "fn",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "aws endpoint"
+  },
+  {
+    "file": "bom-so",
+    "func": "bomso",
+    "endpoint": "/api/bom-so",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "bomso endpoint"
+  },
+  {
+    "file": "brainly",
+    "func": "brainly",
+    "endpoint": "/api/brainly",
+    "params": [
+      {
+        "name": "query",
+        "optional": false
+      },
+      {
+        "name": "limit",
+        "optional": true
+      }
+    ],
+    "category": "AI",
+    "desc": "brainly endpoint"
+  },
+  {
+    "file": "by-com-vn",
+    "func": "bycomvn",
+    "endpoint": "/api/by-com-vn",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "bycomvn endpoint"
+  },
+  {
+    "file": "bypass-cf",
+    "func": "bypasscf",
+    "endpoint": "/api/bypass-cf",
+    "params": [],
+    "category": "Tools & Utils",
+    "desc": "bypasscf endpoint"
+  },
+  {
+    "file": "bypass-city",
+    "func": "bypasscity",
+    "endpoint": "/api/bypass-city",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "bypasscity endpoint"
+  },
+  {
+    "file": "bypass-recaptcha",
+    "func": "bypassrecaptcha",
+    "endpoint": "/api/bypass-recaptcha",
+    "params": [],
+    "category": "Tools & Utils",
+    "desc": "bypassrecaptcha endpoint"
+  },
+  {
+    "file": "bypass-tools",
+    "func": "bypasstools",
+    "endpoint": "/api/bypass-tools",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "bypasstools endpoint"
+  },
+  {
+    "file": "catbox",
+    "func": "catbox",
+    "endpoint": "/api/catbox",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "catbox endpoint"
+  },
+  {
+    "file": "ch-at",
+    "func": "chat",
+    "endpoint": "/api/ch-at",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "chat endpoint"
+  },
+  {
+    "file": "clipto",
+    "func": "clipto",
+    "endpoint": "/api/clipto",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "clipto endpoint"
+  },
+  {
+    "file": "densave",
+    "func": "densave",
+    "endpoint": "/api/densave",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "densave endpoint"
+  },
+  {
+    "file": "dolphin-ai",
+    "func": "dolphinai",
+    "endpoint": "/api/dolphin-ai",
+    "params": [],
+    "category": "AI",
+    "desc": "dolphinai endpoint"
+  },
+  {
+    "file": "downr",
+    "func": "downr",
+    "endpoint": "/api/downr",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "downr endpoint"
+  },
+  {
+    "file": "ej-uz",
+    "func": "ejuz",
+    "endpoint": "/api/ej-uz",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "ejuz endpoint"
+  },
+  {
+    "file": "font-analyzer",
+    "func": "fontanalyzer",
+    "endpoint": "/api/font-analyzer",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "fontanalyzer endpoint"
+  },
+  {
+    "file": "freeimage-host",
+    "func": "freeimagehost",
+    "endpoint": "/api/freeimage-host",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Image Tools",
+    "desc": "freeimagehost endpoint"
+  },
+  {
+    "file": "gemini-proxy",
+    "func": "geminiproxy",
+    "endpoint": "/api/gemini-proxy",
+    "params": [],
+    "category": "AI",
+    "desc": "geminiproxy endpoint"
+  },
+  {
+    "file": "gitmind-ytsummerizer",
+    "func": "gitmind",
+    "endpoint": "/api/gitmind-ytsummerizer",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "gitmind endpoint"
+  },
+  {
+    "file": "gofile",
+    "func": "gofile",
+    "endpoint": "/api/gofile",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "gofile endpoint"
+  },
+  {
+    "file": "goo-su",
+    "func": "goosu",
+    "endpoint": "/api/goo-su",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "goosu endpoint"
+  },
+  {
+    "file": "google-gemini",
+    "func": "gemini",
+    "endpoint": "/api/google-gemini",
+    "params": [],
+    "category": "AI",
+    "desc": "gemini endpoint"
+  },
+  {
+    "file": "google-search",
+    "func": "googlesearch",
+    "endpoint": "/api/google-search",
+    "params": [],
+    "category": "Search & Info",
+    "desc": "googlesearch endpoint"
+  },
+  {
+    "file": "h1-nu",
+    "func": "h1nu",
+    "endpoint": "/api/h1-nu",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "h1nu endpoint"
+  },
+  {
+    "file": "html-to-img",
+    "func": "html2image",
+    "endpoint": "/api/html-to-img",
+    "params": [],
+    "category": "Image Tools",
+    "desc": "html2image endpoint"
+  },
+  {
+    "file": "ige-li",
+    "func": "igeli",
+    "endpoint": "/api/ige-li",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "igeli endpoint"
+  },
+  {
+    "file": "imagy",
+    "func": "imagy",
+    "endpoint": "/api/imagy",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "imagy endpoint"
+  },
+  {
+    "file": "imgbb",
+    "func": "imgbb",
+    "endpoint": "/api/imgbb",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Image Tools",
+    "desc": "imgbb endpoint"
+  },
+  {
+    "file": "imglarger",
+    "func": "imglarger",
+    "endpoint": "/api/imglarger",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Image Tools",
+    "desc": "imglarger endpoint"
+  },
+  {
+    "file": "inthistweet",
+    "func": "inthistweet",
+    "endpoint": "/api/inthistweet",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "inthistweet endpoint"
+  },
+  {
+    "file": "is-gd",
+    "func": "isgd",
+    "endpoint": "/api/is-gd",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "isgd endpoint"
+  },
+  {
+    "file": "jobstreet",
+    "func": "jobstreet",
+    "endpoint": "/api/jobstreet",
+    "params": [
+      {
+        "name": "job",
+        "optional": false
+      },
+      {
+        "name": "city",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "jobstreet endpoint"
+  },
+  {
+    "file": "lambdatest-vcc",
+    "func": "lambdatestvcc",
+    "endpoint": "/api/lambdatest-vcc",
+    "params": [
+      {
+        "name": "type",
+        "optional": false
+      },
+      {
+        "name": "num",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "lambdatestvcc endpoint"
+  },
+  {
+    "file": "lrclib",
+    "func": "lrclib",
+    "endpoint": "/api/lrclib",
+    "params": [
+      {
+        "name": "title",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "lrclib endpoint"
+  },
+  {
+    "file": "mathgpt",
+    "func": "mathgpt",
+    "endpoint": "/api/mathgpt",
+    "params": [],
+    "category": "AI",
+    "desc": "mathgpt endpoint"
+  },
+  {
+    "file": "mlbb-region-checker",
+    "func": "mlbbregioncheck",
+    "endpoint": "/api/mlbb-region-checker",
+    "params": [
+      {
+        "name": "user_id",
+        "optional": false
+      },
+      {
+        "name": "zone_id",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "mlbbregioncheck endpoint"
+  },
+  {
+    "file": "music-finder",
+    "func": "musicfinder",
+    "endpoint": "/api/music-finder",
+    "params": [
+      {
+        "name": "buffer",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "musicfinder endpoint"
+  },
+  {
+    "file": "nik-parser",
+    "func": "nikparser",
+    "endpoint": "/api/nik-parser",
+    "params": [
+      {
+        "name": "nik",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "nikparser endpoint"
+  },
+  {
+    "file": "nsfw-checker",
+    "func": "nsfwchecker",
+    "endpoint": "/api/nsfw-checker",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "nsfwchecker endpoint"
+  },
+  {
+    "file": "ondoku",
+    "func": "ondoku",
+    "endpoint": "/api/ondoku",
+    "params": [],
+    "category": "Fun & Random",
+    "desc": "ondoku endpoint"
+  },
+  {
+    "file": "openai-proxy",
+    "func": "openaiproxy",
+    "endpoint": "/api/openai-proxy",
+    "params": [],
+    "category": "AI",
+    "desc": "openaiproxy endpoint"
+  },
+  {
+    "file": "perplexity",
+    "func": "perplexity",
+    "endpoint": "/api/perplexity",
+    "params": [],
+    "category": "AI",
+    "desc": "perplexity endpoint"
+  },
+  {
+    "file": "pinterest-dl",
+    "func": "pindl",
+    "endpoint": "/api/pinterest-dl",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "pindl endpoint"
+  },
+  {
+    "file": "powerbrain-ai",
+    "func": "powerbrain",
+    "endpoint": "/api/powerbrain-ai",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "powerbrain endpoint"
+  },
+  {
+    "file": "public-ai",
+    "func": "publicai",
+    "endpoint": "/api/public-ai",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "publicai endpoint"
+  },
+  {
+    "file": "qwen-tts",
+    "func": "qwentts",
+    "endpoint": "/api/qwen-tts",
+    "params": [
+      {
+        "name": "text",
+        "optional": false
+      },
+      {
+        "name": "voice",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "qwentts endpoint"
+  },
+  {
+    "file": "refer-is",
+    "func": "referis",
+    "endpoint": "/api/refer-is",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "referis endpoint"
+  },
+  {
+    "file": "remove-clothes",
+    "func": "removeClothes",
+    "endpoint": "/api/remove-clothes",
+    "params": [
+      {
+        "name": "buffer",
+        "optional": false
+      },
+      {
+        "name": "prompt",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "removeClothes endpoint"
+  },
+  {
+    "file": "rip-linkvertise",
+    "func": "riplinkvertise",
+    "endpoint": "/api/rip-linkvertise",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "riplinkvertise endpoint"
+  },
+  {
+    "file": "riple-ai",
+    "func": "ripleai",
+    "endpoint": "/api/riple-ai",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "ripleai endpoint"
+  },
+  {
+    "file": "sald-us",
+    "func": "saldus",
+    "endpoint": "/api/sald-us",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "saldus endpoint"
+  },
+  {
+    "file": "saucenao",
+    "func": "saucenao",
+    "endpoint": "/api/saucenao",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "saucenao endpoint"
+  },
+  {
+    "file": "savetik",
+    "func": "savetik",
+    "endpoint": "/api/savetik",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "savetik endpoint"
+  },
+  {
+    "file": "savetube",
+    "func": "savetube",
+    "endpoint": "/api/savetube",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "format",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "savetube endpoint"
+  },
+  {
+    "file": "saveweb2zip",
+    "func": "saveweb2zip",
+    "endpoint": "/api/saveweb2zip",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "options",
+        "optional": true
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "saveweb2zip endpoint"
+  },
+  {
+    "file": "scloudsave",
+    "func": "scloudsave",
+    "endpoint": "/api/scloudsave",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "scloudsave endpoint"
+  },
+  {
+    "file": "seekin",
+    "func": "seekin",
+    "endpoint": "/api/seekin",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Fun & Random",
+    "desc": "seekin endpoint"
+  },
+  {
+    "file": "smartlnks",
+    "func": "smartlnks",
+    "endpoint": "/api/smartlnks",
+    "params": [],
+    "category": "Tools & Utils",
+    "desc": "smartlnks endpoint"
+  },
+  {
+    "file": "snaptwitt",
+    "func": "snaptwitt",
+    "endpoint": "/api/snaptwitt",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "snaptwitt endpoint"
+  },
+  {
+    "file": "spodownloader",
+    "func": "spodownloader",
+    "endpoint": "/api/spodownloader",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "format",
+        "optional": true
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "spodownloader endpoint"
+  },
+  {
+    "file": "spoo-me",
+    "func": "spoome",
+    "endpoint": "/api/spoo-me",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "spoome endpoint"
+  },
+  {
+    "file": "spotidown",
+    "func": "spotidown",
+    "endpoint": "/api/spotidown",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "spotidown endpoint"
+  },
+  {
+    "file": "spotidownloader",
+    "func": "spotidownloader",
+    "endpoint": "/api/spotidownloader",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "flac",
+        "optional": true
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "spotidownloader endpoint"
+  },
+  {
+    "file": "spotmate",
+    "func": "spotmate",
+    "endpoint": "/api/spotmate",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "spotmate endpoint"
+  },
+  {
+    "file": "ssvid",
+    "func": "ssvid",
+    "endpoint": "/api/ssvid",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "ssvid endpoint"
+  },
+  {
+    "file": "t-ly",
+    "func": "tly",
+    "endpoint": "/api/t-ly",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "tly endpoint"
+  },
+  {
+    "file": "terabox-dl",
+    "func": "teraboxdl",
+    "endpoint": "/api/terabox-dl",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "teraboxdl endpoint"
+  },
+  {
+    "file": "thinfi",
+    "func": "thinfi",
+    "endpoint": "/api/thinfi",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "thinfi endpoint"
+  },
+  {
+    "file": "tiktokdl-rapidapi",
+    "func": "tiktokdl",
+    "endpoint": "/api/tiktokdl-rapidapi",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "tiktokdl endpoint"
+  },
+  {
+    "file": "tinyurl",
+    "func": "tinyurl",
+    "endpoint": "/api/tinyurl",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "tinyurl endpoint"
+  },
+  {
+    "file": "tokviewer",
+    "func": "tokviewer",
+    "endpoint": "/api/tokviewer",
+    "params": [],
+    "category": "Search & Info",
+    "desc": "tokviewer endpoint"
+  },
+  {
+    "file": "trace-moe",
+    "func": "tracemoe",
+    "endpoint": "/api/trace-moe",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Image Tools",
+    "desc": "tracemoe endpoint"
+  },
+  {
+    "file": "turboseek-ai",
+    "func": "turboseek",
+    "endpoint": "/api/turboseek-ai",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "turboseek endpoint"
+  },
+  {
+    "file": "tweeload",
+    "func": "tweeload",
+    "endpoint": "/api/tweeload",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "tweeload endpoint"
+  },
+  {
+    "file": "tweeterdownloader",
+    "func": "tweeterdownloader",
+    "endpoint": "/api/tweeterdownloader",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "tweeterdownloader endpoint"
+  },
+  {
+    "file": "u-to",
+    "func": "uto",
+    "endpoint": "/api/u-to",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "uto endpoint"
+  },
+  {
+    "file": "unaimytext",
+    "func": "unaimytext",
+    "endpoint": "/api/unaimytext",
+    "params": [],
+    "category": "AI",
+    "desc": "unaimytext endpoint"
+  },
+  {
+    "file": "unlimited-ai",
+    "func": "unlimitedai",
+    "endpoint": "/api/unlimited-ai",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "unlimitedai endpoint"
+  },
+  {
+    "file": "unshoten-it",
+    "func": "unshorten",
+    "endpoint": "/api/unshoten-it",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "unshorten endpoint"
+  },
+  {
+    "file": "upstage-ai",
+    "func": "upstageai",
+    "endpoint": "/api/upstage-ai",
+    "params": [
+      {
+        "name": "question",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "upstageai endpoint"
+  },
+  {
+    "file": "vibetik-tiktokdl",
+    "func": "vibetik",
+    "endpoint": "/api/vibetik-tiktokdl",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "vibetik endpoint"
+  },
+  {
+    "file": "vikingfile",
+    "func": "vikingfile",
+    "endpoint": "/api/vikingfile",
+    "params": [
+      {
+        "name": "image",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "vikingfile endpoint"
+  },
+  {
+    "file": "waifu-tagger",
+    "func": "waifutagger",
+    "endpoint": "/api/waifu-tagger",
+    "params": [
+      {
+        "name": "buffer",
+        "optional": false
+      },
+      {
+        "name": "options",
+        "optional": true
+      }
+    ],
+    "category": "AI",
+    "desc": "waifutagger endpoint"
+  },
+  {
+    "file": "wal-ee",
+    "func": "walee",
+    "endpoint": "/api/wal-ee",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "walee endpoint"
+  },
+  {
+    "file": "webpilot",
+    "func": "webpilot",
+    "endpoint": "/api/webpilot",
+    "params": [
+      {
+        "name": "query",
+        "optional": false
+      }
+    ],
+    "category": "AI",
+    "desc": "webpilot endpoint"
+  },
+  {
+    "file": "x-gd",
+    "func": "xgd",
+    "endpoint": "/api/x-gd",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      },
+      {
+        "name": "alias",
+        "optional": true
+      }
+    ],
+    "category": "Tools & Utils",
+    "desc": "xgd endpoint"
+  },
+  {
+    "file": "xdownloader",
+    "func": "xdownloader",
+    "endpoint": "/api/xdownloader",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "xdownloader endpoint"
+  },
+  {
+    "file": "ytdl-rapidapi",
+    "func": "ytdl",
+    "endpoint": "/api/ytdl-rapidapi",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "ytdl endpoint"
+  },
+  {
+    "file": "ytscribeto-twdownloader",
+    "func": "ytscribeto",
+    "endpoint": "/api/ytscribeto-twdownloader",
+    "params": [
+      {
+        "name": "url",
+        "optional": false
+      }
+    ],
+    "category": "Downloaders",
+    "desc": "ytscribeto endpoint"
+  }
+]
