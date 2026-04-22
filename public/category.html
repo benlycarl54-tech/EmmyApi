@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Categories — Emmy API</title>
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head><body>
+<header class="nav"><div class="container nav-inner">
+  <a class="brand" href="/">Emmy<span>API</span></a>
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/docs">Documentation</a>
+    <a href="/category">Categories</a>
+    <a href="/api/list">JSON</a>
+  </nav>
+</div></header>
+<main class="container">
+  <section class="hero" style="padding:60px 0 20px"><h1 style="font-size:46px">Categories</h1><p>Pick a category to explore its endpoints.</p></section>
+  <div class="cards" id="cards"></div>
+</main>
+<footer><div class="container footer-grid">
+  <div><div class="brand" style="margin-bottom:8px">Emmy<span>API</span></div>
+  <div>Free REST APIs for developers. Take, Create, and Deploy with ease.</div>
+  <div style="margin-top:14px">&copy; 2026 Emmy API. All Rights Reserved.</div></div>
+  <div><h4>Links</h4><a href="/docs">Documentation</a><a href="/category">All Categories</a><a href="/api/list">Endpoints JSON</a></div>
+  <div><h4>Connect</h4><a href="#">Contact</a><a href="#">Channel</a></div>
+</div></footer>
+<script>
+const BLURBS={'AI':'Text generation, chat models, and intelligent features.','Downloaders':'Download media from popular platforms.','Image Tools':'Canvas, editors, stickers, image generation.','Search & Info':'Search, stalker, and info APIs.','Tools & Utils':'Converters, shorteners, utilities.','Fun & Random':'Random content and entertainment.'};
+fetch('/categories.json').then(r=>r.json()).then(d=>{
+  const c=document.getElementById('cards');
+  Object.keys(d).sort().forEach(cat=>{
+    const el=document.createElement('a'); el.href='/docs#cat-'+encodeURIComponent(cat); el.className='card';
+    el.innerHTML=`<div class="ic">${cat[0]}</div><h3>${cat}</h3><p>${BLURBS[cat]||''}</p><div class="count">${d[cat].length} endpoints →</div>`;
+    c.appendChild(el);
+  });
+});
+</script></body></html>

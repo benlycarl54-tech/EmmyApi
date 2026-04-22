@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documentation — Emmy API</title>
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head><body>
+<header class="nav"><div class="container nav-inner">
+  <a class="brand" href="/">Emmy<span>API</span></a>
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/docs">Documentation</a>
+    <a href="/category">Categories</a>
+    <a href="/api/list">JSON</a>
+  </nav>
+</div></header>
+<main class="container">
+  <section class="hero" style="padding:60px 0 20px">
+    <h1 style="font-size:46px">Documentation</h1>
+    <p>Every endpoint, every parameter, ready to try.</p>
+  </section>
+  <div id="search-wrap" style="margin:10px 0 30px">
+    <input id="search" placeholder="Search endpoints…" style="width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--border);background:var(--panel);color:var(--text);font-size:15px">
+  </div>
+  <div id="docs"></div>
+</main>
+<footer><div class="container footer-grid">
+  <div><div class="brand" style="margin-bottom:8px">Emmy<span>API</span></div>
+  <div>Free REST APIs for developers. Take, Create, and Deploy with ease.</div>
+  <div style="margin-top:14px">&copy; 2026 Emmy API. All Rights Reserved.</div></div>
+  <div><h4>Links</h4><a href="/docs">Documentation</a><a href="/category">All Categories</a><a href="/api/list">Endpoints JSON</a></div>
+  <div><h4>Connect</h4><a href="#">Contact</a><a href="#">Channel</a></div>
+</div></footer>
+<script>
+const BASE=location.origin;
+let ALL=[];
+function render(list){
+  const root=document.getElementById('docs'); root.innerHTML='';
+  const groups={};
+  list.forEach(ep=>(groups[ep.category]||=[]).push(ep));
+  Object.keys(groups).sort().forEach(cat=>{
+    const section=document.createElement('section'); section.id='cat-'+encodeURIComponent(cat);
+    section.innerHTML=`<h2 class="section-title">${cat}</h2><p class="section-sub">${groups[cat].length} endpoints</p>`;
+    groups[cat].forEach(ep=>{
+      const div=document.createElement('div'); div.className='endpoint';
+      const qs=ep.params.map(p=>`${p.name}=`+(p.name==='url'?'https%3A%2F%2Fexample.com':'')).join('&');
+      const url=BASE+'/api/'+ep.name+(qs?'?'+qs:'');
+      div.innerHTML=`
+        <div class="endpoint-head"><h4><span class="method">GET</span>${ep.name}</h4>
+          <span class="cat-pill">${ep.category}</span></div>
+        <p>${ep.description||ep.name+' endpoint'}</p>
+        <code>${url}</code>
+        <div class="try">
+          ${ep.params.map(p=>`<input data-p="${p.name}" placeholder="${p.name}${p.optional?' (optional)':''}">`).join('')}
+          <button>Try</button>
+        </div>
+        <div class="resp" style="display:none"></div>`;
+      const btn=div.querySelector('button'), resp=div.querySelector('.resp');
+      btn.onclick=async()=>{
+        const params=new URLSearchParams();
+        div.querySelectorAll('input[data-p]').forEach(i=>{ if(i.value) params.set(i.dataset.p,i.value); });
+        resp.style.display='block'; resp.textContent='Loading…';
+        try{ const r=await fetch('/api/'+ep.name+'?'+params.toString()); const t=await r.text();
+          try{ resp.textContent=JSON.stringify(JSON.parse(t),null,2); }catch(_){resp.textContent=t;}
+        }catch(e){ resp.textContent='Error: '+e.message; }
+      };
+      section.appendChild(div);
+    });
+    root.appendChild(section);
+  });
+}
+fetch('/api/list').then(r=>r.json()).then(d=>{
+  ALL=d.endpoints.map(e=>({name:e.name,category:e.category,description:e.description,params:e.params}));
+  render(ALL);
+  if(location.hash){ const el=document.querySelector(location.hash); if(el) el.scrollIntoView(); }
+});
+document.getElementById('search').addEventListener('input',e=>{
+  const q=e.target.value.toLowerCase();
+  render(ALL.filter(ep=>ep.name.toLowerCase().includes(q)||(ep.description||'').toLowerCase().includes(q)||ep.category.toLowerCase().includes(q)));
+});
+</script></body></html>

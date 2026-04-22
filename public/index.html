@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emmy API — Take. Create. Deploy.</title>
+<meta name="description" content="A fast, reliable REST API collection for developers. AI, image processing, downloaders, tools and more.">
+<link rel="stylesheet" href="/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head><body>
+<header class="nav"><div class="container nav-inner">
+  <a class="brand" href="/">Emmy<span>API</span></a>
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/docs">Documentation</a>
+    <a href="/category">Categories</a>
+    <a href="/api/list">JSON</a>
+  </nav>
+</div></header>
+<main class="container">
+  <section class="hero">
+    <h1>Take.<br>Create.<br><span class="g">Deploy.</span></h1>
+    <p>A fast, reliable REST API collection for developers. AI, image processing, downloaders, tools and more — all in one place.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="/docs">Get Started →</a>
+      <a class="btn" href="/category">Browse Categories</a>
+    </div>
+  </section>
+
+  <section class="stats" id="stats">
+    <div class="stat"><div class="n" id="s-ep">—</div><div class="l">Endpoints</div></div>
+    <div class="stat"><div class="n" id="s-cat">—</div><div class="l">Categories</div></div>
+    <div class="stat"><div class="n">Free</div><div class="l">No Key</div></div>
+    <div class="stat"><div class="n">24/7</div><div class="l">Uptime</div></div>
+  </section>
+
+  <h2 class="section-title">What's inside</h2>
+  <p class="section-sub">Browse endpoints by category.</p>
+  <div class="cards" id="cards"></div>
+
+  <section class="cta">
+    <h2>Ready to build?</h2>
+    <p>Start integrating Emmy APIs into your project today. No sign-up, no API key required.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="/docs">Start Now</a>
+      <a class="btn" href="/api/list">View JSON</a>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-grid">
+  <div><div class="brand" style="margin-bottom:8px">Emmy<span>API</span></div>
+  <div>Free REST APIs for developers. Take, Create, and Deploy with ease.</div>
+  <div style="margin-top:14px">&copy; 2026 Emmy API. All Rights Reserved.</div></div>
+  <div><h4>Links</h4><a href="/docs">Documentation</a><a href="/category">All Categories</a><a href="/api/list">Endpoints JSON</a></div>
+  <div><h4>Connect</h4><a href="#">Contact</a><a href="#">Channel</a></div>
+</div></footer>
+<script>
+const ICONS = {'AI':'AI','Downloaders':'DL','Image Tools':'IM','Search & Info':'SI','Tools & Utils':'TU','Fun & Random':'FR'};
+const BLURBS = {
+  'AI':'Text generation, chat models, and intelligent features.',
+  'Downloaders':'Download media from popular platforms quickly.',
+  'Image Tools':'Canvas, editors, stickers, and image generation.',
+  'Search & Info':'Search engines, stalker tools, and info APIs.',
+  'Tools & Utils':'Converters, shorteners, and everyday utilities.',
+  'Fun & Random':'Games, random content, and entertainment APIs.'
+};
+fetch('/categories.json').then(r=>r.json()).then(data=>{
+  const cards=document.getElementById('cards');
+  let total=0; const catCount=Object.keys(data).length;
+  const order=['AI','Downloaders','Image Tools','Search & Info','Tools & Utils','Fun & Random'];
+  order.forEach(cat=>{
+    if(!data[cat]) return;
+    total+=data[cat].length;
+    const el=document.createElement('a'); el.href='/docs#cat-'+encodeURIComponent(cat); el.className='card';
+    el.innerHTML=`<div class="ic">${ICONS[cat]||'·'}</div><h3>${cat}</h3><p>${BLURBS[cat]||''}</p><div class="count">${data[cat].length} endpoints →</div>`;
+    cards.appendChild(el);
+  });
+  document.getElementById('s-ep').textContent=total;
+  document.getElementById('s-cat').textContent=catCount;
+});
+</script>
+</body></html>
